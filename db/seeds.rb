@@ -11,7 +11,7 @@ Project.destroy_all
 User.destroy_all
 
 
-naved = User.create!(username: "bobaloo142", password_digest: "scpswmd1")
+naved = User.create!(username: "bobaloo142", password: "scpswmd1")
 
 pp "#{User.count} users created"
 
