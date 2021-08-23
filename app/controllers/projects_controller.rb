@@ -30,9 +30,7 @@ class ProjectsController < ApplicationController
 
   def destroy
     @project.destroy
-  end
-
-  def 
+  end 
 
   private
 
