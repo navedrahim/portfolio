@@ -12,13 +12,18 @@ export const getOneComment = async (id) => {
 
 export const createComment = async (comment) => {
   try {
-    const res = await api.post("/contacts", comment);
+    const res = await api.post("/comments", comment);
     return res.data;
   } catch {
     return false;
   }
 };
 
-export const deleteComment = async (id) => {
-  await api.delete(`/contacts/${id}`);
-};
+export const deleteComment = async id => {
+  try {
+    const res = await api.delete(`/comments/${id}`)
+    return res.data
+  } catch (error) {
+    throw error
+  }
+}

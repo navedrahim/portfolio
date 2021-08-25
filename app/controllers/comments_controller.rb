@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   before_action :authorize_request, only: [:show, :update, :destroy]
+  before_action :get_comment, only: [:update, :show, :destroy]
 
   def index
     comments = Comment.all
@@ -34,11 +35,12 @@ class CommentsController < ApplicationController
 
   private
 
+  def get_comment
+    @comment = Comment.find(params[:id])
+  end
+
   def comment_params
     params.require(:comment).permit(:email, :message)
   end
 
-  def get_comment
-    @comment = Comments.find(params[:id])
-  end
 end

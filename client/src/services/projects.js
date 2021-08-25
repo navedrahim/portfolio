@@ -29,7 +29,7 @@ export const createProject = async (project) => {
 
 export const editProject = async (id, project) => {
   try {
-    const response = await api.put(`/posts/${id}`, project);
+    const response = await api.put(`/projects/${id}`, project);
     return response.data;
   } catch (error) {
     throw error;
