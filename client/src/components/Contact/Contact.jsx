@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createComment } from "../../services/comments";
+import "./Contact.css"
 
 const Contact = () => {
   const [comment, setComment] = useState({
@@ -28,8 +29,8 @@ const Contact = () => {
 
   return (
     <div id="contact">
-      Contact Me!
       <form className="comment-form" onSubmit={handleSubmit}>
+      <div className="contact-title">Contact Me!</div>
         <input className="input-email"
           type="email"
           name="email"

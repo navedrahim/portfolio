@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.my-name {
+  color: white;
+  font-size: 65px;
+  align-content: center;
+  animation: fadeIn linear 2s;
+  padding-right: 50px;
+}
+
+.engineer {
+  color: white;
+  font-size: 65px;
+  align-content: center;
+  animation: fadeIn linear 6s;
+  padding-left: 50px;
+}
+
+.line {
+  color: darkred;
+  font-size: 65px;
+  font-weight: 800;
+  animation: fadeIn linear 4s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -16,20 +16,25 @@ const Projects = () => {
 
   return (
     <div id="projects">
-      <div className="projects-title">Projects</div>
       <div className="projects-container">
-        {projects.map((project) => (
-          <div className="project-card" key={project.id}>
-            <Link to={`/projects/${project.id}`}>
-              <img
-                className="screenshot"
-                src={project.screenshot}
-                alt={project.name}
-              />
-              <div className="project-name">{project.name}</div>
-            </Link>
-          </div>
-        ))}
+        <div className="projects-title">Projects</div>
+        <div className="cards">
+          {projects.map((project) => (
+            <div className="project-card" key={project.id}>
+              <Link to={`/projects/${project.id}`}>
+                <img
+                  className="screenshot"
+                  src={project.screenshot}
+                  alt={project.name}
+                />
+                <div className="overlay">
+                  <div className="project-name">{project.name}</div>
+                  <p className="click">Click for more info</p>
+                </div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

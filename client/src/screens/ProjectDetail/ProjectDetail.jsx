@@ -2,6 +2,7 @@ import { getProject, deleteProject } from "../../services/projects";
 import { useState, useEffect } from "react";
 import { useParams, Link, Redirect } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import "./ProjectDetail.css";
 
 const ProjectDetail = (props) => {
   const [project, setProject] = useState({});
@@ -35,10 +36,10 @@ const ProjectDetail = (props) => {
   )
   const alwaysOptions = (
     <div className="detail-buttons">
-      <Link className="link" to={{ pathname: project.github_link }} target="_blank">
+      <Link className="detail-link" to={{ pathname: project.github_link }} target="_blank">
         <button className="github-button">GitHub</button>
       </Link>
-      <Link className="link" to={{ pathname: project.deployed_link }} target="_blank">
+      <Link className="detail-link" to={{ pathname: project.deployed_link }} target="_blank">
         <button className="deployed-button">Go to site</button>
       </Link>
     </div>

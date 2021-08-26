@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .HTML,
 .CSS,
 .JS,
@@ -10,3 +12,50 @@
 .Rails {
   max-height: 75px;
 }
+.about-title, .skills-title {
+  color:darkred;
+  font-size: 30px;
+  font-weight: 800;
+  padding-bottom: 30px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+#about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 75px;
+  align-items: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face {
+  border-radius: 80%;
+  padding: 5px;
+}
+
+.about-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.hub, .linkedin {
+  width: 50px;
+  padding: 20px;
+}
+
+.about-content {
+  font-size: 18px;
+}
+
