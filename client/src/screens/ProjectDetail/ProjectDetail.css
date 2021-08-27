@@ -35,3 +35,10 @@
   background: white;
   font-family: "Montserrat", sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+
+  .project-detail-image, .detail {
+    width: 90vw;
+  }
+}
