@@ -40,3 +40,25 @@
     opacity: 1;
   }
 }
+ @media screen and (max-width: 768px) {
+   .my-name, .line, .engineer {
+     font-size: 30px;
+   }
+ }
+
+ @media screen and (max-width: 450px) {
+   .landing {
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   .my-name, .line, .engineer {
+    font-size: 25px;
+  }
+  .my-name {
+    padding-right: 0;
+  }
+  .engineer {
+    padding-left: 0;
+  }
+ }

@@ -70,3 +70,13 @@
 .overlay:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+  .projects-title {
+    align-self: center;
+  }
+}
+

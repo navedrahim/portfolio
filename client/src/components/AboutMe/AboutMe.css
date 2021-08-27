@@ -59,3 +59,20 @@
   font-size: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .face {
+    display: none;
+  }
+  .about-title, .skills-title {
+    align-self: center;
+  }
+  .skills {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+  .bio {
+    width: 70vw;
+  }
+
+}
