@@ -2,6 +2,7 @@ import { createProject } from "../../services/projects";
 import { useState } from "react";
 import { Redirect } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import "./ProjectAdd.css";
 
 const ProjectAdd = (props) => {
   const [project, setProject] = useState({
