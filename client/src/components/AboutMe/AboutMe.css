@@ -9,7 +9,8 @@
 .Express,
 .SQL,
 .Ruby,
-.Rails {
+.Rails,
+.GraphQL {
   max-height: 75px;
 }
 .about-title, .skills-title {

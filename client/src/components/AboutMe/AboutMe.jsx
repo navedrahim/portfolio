@@ -97,6 +97,11 @@ const AboutMe = () => {
             src="https://i.imgur.com/ZdWqqNR.png"
             alt="Rails"
           />
+          <img
+            className="GraphQL"
+            src="https://i.imgur.com/REgOLJY.png"
+            alt="GraphQL"
+          />
         </div>
       </div>
     </div>
